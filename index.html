@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ChaseAtlantic_MEDRANO</title>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <style>
+            *{
+                margin:0;
+                padding:0; 
+                box-sizing:border-box;
+                font-family:"Raleway";
+                scroll-behavior:smooth;
+            }
+            body{
+                background-image: url('bg 1.png'); 
+                background-color: black;
+                min-height: 100vh; 
+                background-attachment: fixed;
+            }
+            section{
+                min-height:100vh;
+                padding:100px 10%;
+            }
+            nav{
+                position:fixed;
+                top:0;
+                width:100%;
+                height: 7%;
+                background:#3B1646;
+                padding:1px 8%;
+                display:flex;
+                justify-content:space-between;
+                align-items:center;
+                z-index:1000;
+            }
+            #logo{
+                display:block;
+            }
+            nav ul{
+                list-style:none;
+                display:flex;
+                gap:70px;
+            }
+            nav ul li a{
+                text-decoration:none;
+                color:white;
+                font-size:12px;
+            }
+            .search-container input{
+                background-color:transparent;
+                padding:4px;
+                border: none;
+                border-bottom: 1px solid white;
+                font-size: 12px;
+            }
+            .search-container button{
+                background-color:transparent;
+                font-size: 15px;
+                color: white;
+                border: none;
+                cursor: pointer;
+            }
+            input::placeholder{
+                color: white;
+            }
+            input:focus{
+                color: white;
+                outline: none;
+            }
+            button:focus{
+                color: white;
+            }
+
+            .slideshow-container {
+                max-width: 1000px;
+                position: relative;
+                margin: auto;
+            }
+            .about {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 100px;
+            }
+            .about-image {
+                width: 550px;
+                height: 650px;
+                border-radius: 20px;
+                flex-shrink: 0;
+            }
+            .about-image img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 15px;
+            }
+            .about-content h2{
+                color: white;
+                margin-bottom: 20px;
+                font-size:50px;
+            }
+            .about-content p {
+                color: white;
+                text-align: justify;
+                text-justify: inter-word;
+                font-size: 25px;
+                max-width: 90%;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+        <nav>
+            <a href="#home"><img id="logo" src="Chase-Atlantic-Logo.webp" alt="Chase Atlantic Logo" width="250"></a>
+            <ul>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#discography">DISCOGRAPHY</a></li>
+                <li><a href="#tours">TOURS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+            <div class="search-container">
+                <button type="submit"><i class="fa fa-search"></i></button>
+                <input type="text" placeholder="search our website" name="search">
+            </div>
+        </nav>
+
+        <section id="home" class="home">
+            <div class="slideshow-container">
+                <div class="first-slide">
+                    <img src="live film.jpg" style="width:100%"/>
+                    <div class="slide-text">Caption Text</div>
+                </div>
+                <!-- <div class="second-slide">
+                    <img src="lost in heaven.jpg" style="width:100%"/>
+                    <div class="slide-text">Caption Text</div>
+                </div>
+                <div class="first-slide">
+                    <img src="europe 2025.png" style="width:100%"/>
+                    <div class="slide-text">Caption Text</div>
+                </div> -->
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="about-content">
+                <h2>ABOUT</h2>
+                <p><b>Chase Atlantic</b> is an Australian alternative R&B and pop trio formed in Cairns in 2014. 
+                    The band consists of brothers Mitchel Cave and Clinton Cave, alongside 
+                    longtime friend Christian Anthony. They are globally recognized for blending dark pop, 
+                    hip-hop, and rock, anchored by their breakthrough 2017 viral hit "Swim".</p>
+            </div>
+            <div class="about-image">
+                <img src="Chase_Atlantic_Photoshoot.jpg" alt="About Me">
+            </div>
+        </section>
+
+    </body>
+</html>
