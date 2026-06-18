@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ChaseAtlantic_MEDRANO</title>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta charset="UTF-8">
+
+        <style>
+            *{
+                margin:0;
+                padding:0; 
+                box-sizing:border-box;
+                font-family:"Raleway";
+                scroll-behavior:smooth;
+            }
+            body{
+                background-image: url('bg 1.png'); 
+                background-color: black;
+                min-height: 100vh; 
+                background-attachment: fixed;
+            }
+            section{
+                min-height:100vh;
+                padding:100px 10%;
+            }
+            nav{
+                position:fixed;
+                top:0;
+                width:100%;
+                height: 7%;
+                background:#3B1646;
+                padding:1px 8%;
+                display:flex;
+                justify-content:space-between;
+                align-items:center;
+                z-index:1000;
+            }
+            #logo{
+                display:block;
+            }
+            nav ul{
+                list-style:none;
+                display:flex;
+                gap:70px;
+            }
+            nav ul li a{
+                text-decoration:none;
+                color:white;
+                font-size:12px;
+            }
+            .search-container input{
+                background-color:transparent;
+                padding:4px;
+                border: none;
+                border-bottom: 1px solid white;
+                font-size: 12px;
+            }
+            .search-container button{
+                background-color:transparent;
+                font-size: 15px;
+                color: white;
+                border: none;
+                cursor: pointer;
+            }
+            .search-container input::placeholder, 
+            .search-container button:focus{
+                color: white;
+            }
+            .search-container input:focus{
+                color: white;
+                outline: none;
+            }
+            .maps{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 50px;
+            }
+            .maps-content h2{
+                color: white;
+                margin-bottom: 20px;
+                font-size:50px;
+            }
+            .maps-content p {
+                color: white;
+                text-align: justify;
+                text-justify: inter-word;
+                font-size: 25px;
+                max-width: 300%;
+            }
+            footer {
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                background: #3B1646;
+                color: white;
+                text-align: center;
+                padding:15px 8%;
+            }
+            footer p{
+                font-size:12px;
+            }
+            .socials{
+                margin-top: 10px;
+                font-size:20px;
+                letter-spacing:10px;
+            }
+            .socials a{
+                text-decoration: none;
+                color: white;
+            }
+            .fa:hover{
+                opacity: 0.7;
+                transition: 0.3s;
+            }
+            .tabs{
+                transition: 0.3s;
+            }
+            .tabs:hover {
+                opacity: 0.7;
+                letter-spacing: 2px
+            }
+            #logo:hover{
+                opacity: 0.7;
+                transition: 0.3s;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+        <nav>
+            <a href="index.html #home"><img id="logo" src="Chase-Atlantic-Logo.webp" alt="Chase Atlantic Logo" width="250"></a>
+            <ul>
+                <li><a href="index.html #about" class="tabs">ABOUT</a></li>
+                <li><a href="index.html #discography" class="tabs">DISCOGRAPHY</a></li>
+                <li><a href="index.html #tours" class="tabs">TOURS</a></li>
+                <li><a href="contact.php" class="tabs">CONTACT</a></li>
+            </ul>
+            <div class="search-container">
+                <button type="submit"><i class="fa fa-search"></i></button>
+                <input type="text" placeholder="search our website" name="search">
+            </div>
+        </nav>
+        <section class="maps">
+            <div class="map-tour">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3312.2539294301278!2d151.2112103!3d-33.8831135!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae18e3f77ddd%3A0xee5de91a065cf43e!2sThe%20Lair!5e0!3m2!1sen!2sph!4v1781711762312!5m2!1sen!2sph"
+                width="950" 
+                height="540" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            
+            
+            <div class="maps-content">
+                <h2>FIRST TOUR</h2>
+            <p>
+                Chase Atlantic's first-ever headlining tour was the Nostalgia Tour in 2015, which took place in Australia. 
+                Since then, the Australian-born band has performed in the city multiple times, 
+                scaling up from smaller venues like The Factory Theatre in 2019 to major arenas like Qudos Bank Arena in 2024.
+            </p>
+            </div>
+            
+        </section>
+        <footer>
+            <p>&copy; 2026 Chase Atlantic UK.</p>
+
+            <div class="socials">
+                <a href="https://www.instagram.com/chaseatlantic" class="fa fa-instagram"></a>
+                <a href="https://www.facebook.com/ChaseAtlantic/" class="fa fa-facebook-f"></a>
+                <a href="https://www.youtube.com/@chaseatlantic" class="fa fa-youtube-play"></a>
+                <a href="https://x.com/chaseatlantic?lang=en" class="fa fa-twitter"></a>
+            </div>        
+        </footer>
+    </body>
+</html>
