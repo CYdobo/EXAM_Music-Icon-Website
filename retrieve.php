@@ -5,7 +5,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <meta charset="UTF-8">
-
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
             *{
                 margin:0;
@@ -38,6 +38,7 @@
             }
             #logo{
                 display:block;
+                margin-top: 6px;
             }
             nav ul{
                 list-style:none;
@@ -180,10 +181,10 @@
             <p>&copy; 2026 Chase Atlantic UK.</p>
 
             <div class="socials">
-                <a href="https://www.instagram.com/chaseatlantic" class="fa fa-instagram"></a>
-                <a href="https://www.facebook.com/ChaseAtlantic/" class="fa fa-facebook-f"></a>
-                <a href="https://www.youtube.com/@chaseatlantic" class="fa fa-youtube-play"></a>
-                <a href="https://x.com/chaseatlantic?lang=en" class="fa fa-twitter"></a>
+                <a href="https://www.instagram.com/chaseatlantic" class="fa fa-instagram" target="_blank"></a>
+                <a href="https://www.facebook.com/ChaseAtlantic/" class="fa fa-facebook-f" target="_blank"></a>
+                <a href="https://www.youtube.com/@chaseatlantic" class="fa fa-youtube-play" target="_blank"></a>
+                <a href="https://x.com/chaseatlantic?lang=en" class="fa fa-twitter" target="_blank"></a>
             </div>        
         </footer>
     </body>

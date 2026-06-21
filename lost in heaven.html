@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ChaseAtlantic_MEDRANO</title>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        
+
+        <style>
+            *{
+                margin:0;
+                padding:0; 
+                box-sizing:border-box;
+                font-family:"Raleway";
+                scroll-behavior:smooth;
+            }
+            body{
+                background-image: url('bg 1.png'); 
+                background-color: black;
+                min-height: 100vh; 
+                background-attachment: fixed;
+            }
+            section{
+                min-height:100vh;
+                padding:100px 10%;
+            }
+            nav{
+                position:fixed;
+                top:0;
+                width:100%;
+                height: 7%;
+                background:#3B1646;
+                padding:1px 8%;
+                display:flex;
+                justify-content:space-between;
+                align-items:center;
+                z-index:1000;
+            }
+            #logo{
+                display:block;
+                margin-top: 6px;
+            }
+            nav ul{
+                list-style:none;
+                display:flex;
+                gap:70px;
+            }
+            nav ul li a{
+                text-decoration:none;
+                color:white;
+                font-size:12px;
+            }
+            .search-container input{
+                background-color:transparent;
+                padding:4px;
+                border: none;
+                border-bottom: 1px solid white;
+                font-size: 12px;
+            }
+            .search-container button{
+                background-color:transparent;
+                font-size: 15px;
+                color: white;
+                border: none;
+                cursor: pointer;
+            }
+            .search-container input::placeholder, 
+            .search-container button:focus{
+                color: white;
+            }
+            .search-container input:focus{
+                color: white;
+                outline: none;
+            }
+            
+            footer {
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                background: #3B1646;
+                color: white;
+                text-align: center;
+                padding:15px 8%;
+            }
+            footer p{
+                font-size:12px;
+            }
+            .socials{
+                margin-top: 10px;
+                font-size:20px;
+                letter-spacing:10px;
+            }
+            .socials a{
+                text-decoration: none;
+                color: white;
+            }
+            .fa:hover{
+                opacity: 0.7;
+                transition: 0.3s;
+            }
+            .tabs{
+                transition: 0.3s;
+            }
+            .tabs:hover {
+                opacity: 0.7;
+                letter-spacing: 2px
+            }
+            #logo:hover{
+                opacity: 0.7;
+                transition: 0.3s;
+            }
+            button:hover{
+                opacity: 0.7;
+                transition: 0.3s;
+            }
+            .scroll-container {
+                background-color: transparent;
+                overflow: auto;
+                white-space: nowrap;
+                padding: 10px;
+            }
+
+            .scroll-container img {
+                padding: 10px;
+            }
+            .scroll-container::-webkit-scrollbar {
+                height: 12px;
+            }
+            .scroll-container::-webkit-scrollbar-track {
+                background: transparent;
+            }
+            .scroll-container::-webkit-scrollbar-thumb {
+                background-color: rgba(255, 255, 255, 0.5);
+                border-radius: 10px;
+            }
+            .card{
+                background:white;
+                width: 500px;
+                height:500px;
+            }
+            .card h3{
+                display: flex;
+                justify-content: center;
+                color: white;
+                margin-top: 15px;
+                margin-bottom:5px;
+                font-size: 30px;
+                letter-spacing: 2px;
+            }
+            .card p{
+                display: flex;
+                justify-content: center;
+                color:white;
+                font-size: 20px;
+            }
+            .album-image{
+                width: 100%;
+                object-fit:cover;
+            }
+            .tracklist{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 30px;
+                margin-top: 10px;
+            }
+            .tracklist-table{
+                display: flex;
+                justify-content: center;
+                
+            }
+            .table{
+                border-collapse: collapse;
+                width: 100%;
+            }
+            table, th, td {
+                padding: 10px 40px;
+                color: white;
+                font-size: 20px;
+            }
+            
+            tr{
+                transition: 0.3s;
+            }
+            tr:hover{
+                background-color: rgb(78, 18, 105);
+            }
+
+            .track-num {
+                position: relative;
+                text-align: center;
+            }
+
+            .track-num .play-icon {
+                display: none;
+                cursor: pointer;
+                font-weight: 900;
+            }
+
+            tr:hover .track-num .num {
+                display: none;
+            }
+
+            tr:hover .track-num .play-icon {
+                display: inline-block;
+            }
+            .play-icon {
+                cursor: pointer;
+            }
+            .icon-material {
+                font-family: "Material Icons";
+                font-weight: normal;
+                font-style: normal;
+                display: inline-block;
+                vertical-align: middle;
+                line-height: 1;
+            }
+            .lyrics-icon a{
+                text-decoration: none;
+                color: white;
+            }
+
+
+        </style>
+
+    </head>
+
+    <body>
+        <nav>
+            <a href="index.html #home"><img id="logo" src="Chase-Atlantic-Logo.webp" alt="Chase Atlantic Logo" width="250"></a>
+            <ul>
+                <li><a href="index.html #about" class="tabs">ABOUT</a></li>
+                <li><a href="index.html #discography" class="tabs">DISCOGRAPHY</a></li>
+                <li><a href="index.html #tours" class="tabs">TOURS</a></li>
+                <li><a href="contact.php" class="tabs">CONTACT</a></li>
+            </ul>
+            <div class="search-container">
+                <button type="submit"><i class="fa fa-search"></i></button>
+                <input type="text" placeholder="search our website" name="search">
+            </div>
+        </nav>
+
+        <section id="tracklist" class="tracklist">
+            <div class="card">
+                <div>
+                    <img src="lost in heaven album.jpg" alt="Lost in Heaven" class="album-image">
+                    <h3>LOST IN HEAVEN</h3>
+                    <p>2024</p>
+                </div>
+            </div>
+            
+            <div class="tracklist-table">
+                <table id="table" class="table">
+                    <th>#</th>
+                    <th>Title</th>
+                    <th>Duration</th>
+                    <th>Lyrics</th>
+                    
+                    <tr>
+                        <td class="track-num">
+                            <span class="num">1</span>
+                            <span class="play-icon icon-material" onclick="togglePlay(this,'previewmusic/FAVELA.m4a')">&#9654;</span>
+                        </td>
+                        <td>Favela</td>
+                        <td>3:44</td>
+                        <td class="lyrics-icon"> <a href="https://genius.com/Chase-atlantic-favela-lyrics" target="_blank">&#9836</a> </td>
+                    </tr>
+                    <tr>
+                        <td class="track-num">
+                            <span class="num">2</span>
+                            <span class="play-icon icon-material" onclick="togglePlay(this,'previewmusic/DIE_FOR_ME.m4a')">&#9654;</span>
+                        </td>
+                        <td>Die for Me</td>
+                        <td>3:26</td>
+                        <td class="lyrics-icon"> <a href="https://genius.com/Chase-atlantic-die-for-me-lyrics" target="_blank">&#9836</a></td>
+                    </tr>
+                    <tr>
+                        <td class="track-num">
+                            <span class="num">3</span>
+                            <span class="play-icon icon-material" onclick="togglePlay(this,'previewmusic/RICOCHET.m4a')">&#9654;</span>
+                        </td>
+                        <td>Ricochet</td>
+                        <td>3:17</td>
+                        <td class="lyrics-icon"><a href="https://genius.com/Chase-atlantic-ricochet-lyrics" target="_blank">&#9836</a></td>
+                    </tr>
+                    <tr>
+                        <td class="track-num">
+                            <span class="num">4</span>
+                            <span class="play-icon">&#9654;</span>
+                        </td>
+                        <td>You</td>
+                        <td>3:33</td>
+                        <td class="lyrics-icon" >&#9836</td>
+                    </tr>
+                    <tr>
+                        <td class="track-num">
+                            <span class="num">5</span>
+                            <span class="play-icon">&#9654;</span>
+                        </td>
+                        <td>Demon Time</td>
+                        <td>2:48</td>
+                        <td class="lyrics-icon">&#9836</td>
+                    </tr>
+                    <tr>
+                        <td class="track-num">
+                            <span class="num">6</span>
+                            <span class="play-icon">&#9654;</span>
+                        </td>
+                        <td>Night Calls</td>
+                        <td>1:28</td>
+                        <td class="lyrics-icon">&#9836</td>
+                    </tr>
+                    <tr>
+                        <td class="track-num">
+                            <span class="num">7</span>
+                            <span class="play-icon">&#9654;</span>
+                        </td>
+                        <td>Disconnected</td>
+                        <td>4:10</td>
+                        <td class="lyrics-icon">&#9836</td>
+                    </tr>
+                    <tr>
+                        <td class="track-num">
+                            <span class="num">8</span>
+                            <span class="play-icon">&#9654;</span>
+                        </td>
+                        <td>Hours Lost</td>
+                        <td>3:49</td>
+                        <td class="lyrics-icon">&#9836</td>
+                    </tr>
+                    <tr>
+                        <td class="track-num">
+                            <span class="num">9</span>
+                            <span class="play-icon">&#9654;</span>
+                        </td>
+                        <td>Mess Me Up</td>
+                        <td>3:28</td>
+                        <td class="lyrics-icon">&#9836</td>
+                    </tr>
+                    <tr>
+                        <td class="track-num">
+                            <span class="num">10</span>
+                            <span class="play-icon">&#9654;</span>
+                        </td>
+                        <td>Amy</td>
+                        <td>3:18</td>
+                        <td class="lyrics-icon">&#9836</td>
+                    </tr>
+                    <tr>
+                        <td class="track-num">
+                            <span class="num">11</span>
+                            <span class="play-icon">&#9654;</span>
+                        </td>
+                        <td>Doubt It</td>
+                        <td>3:28</td>
+                        <td class="lyrics-icon">&#9836</td>
+                    </tr>
+                    <tr>
+                        <td class="track-num">
+                            <span class="num">12</span>
+                            <span class="play-icon">&#9654;</span>
+                        </td>
+                        <td>Mamacita</td>
+                        <td>3:22</td>
+                        <td class="lyrics-icon">&#9836</td>
+                    </tr>
+                    <tr>
+                        <td class="track-num">
+                            <span class="num">13</span>
+                            <span class="play-icon">&#9654;</span>
+                        </td>
+                        <td>Don't Laugh</td>
+                        <td>4:05</td>
+                        <td class="lyrics-icon">&#9836</td>
+                    </tr>
+
+                </table>
+            </div>
+        </section>
+
+            <footer>
+                <p>&copy; 2026 Chase Atlantic UK.</p>
+
+                <div class="socials">
+                    <a href="https://www.instagram.com/chaseatlantic" class="fa fa-instagram" target="_blank"></a>
+                    <a href="https://www.facebook.com/ChaseAtlantic/" class="fa fa-facebook-f" target="_blank"></a>
+                    <a href="https://www.youtube.com/@chaseatlantic" class="fa fa-youtube-play" target="_blank"></a>
+                    <a href="https://x.com/chaseatlantic?lang=en" class="fa fa-twitter" target="_blank"></a>
+                </div>
+            </footer>
+
+            <script>
+                let currentAudio = null;
+                let currentIcon = null;
+
+                function togglePlay(iconEl, soundPath) {
+                    if (currentAudio && currentIcon === iconEl) {
+                        currentAudio.pause();
+                        iconEl.innerHTML = "&#9654;";
+                        currentAudio = null;
+                        currentIcon = null;
+                        return;
+                    }
+                    if (currentAudio) {
+                        currentAudio.pause();
+                        currentIcon.innerHTML = "&#9654;";
+                    }
+                    currentAudio = new Audio(soundPath);
+                    currentAudio.play();
+                    iconEl.innerHTML = "&#xe034;";
+                    currentIcon = iconEl;
+                }
+            </script>
+            
+    </body>
+</html>

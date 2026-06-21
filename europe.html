@@ -64,59 +64,24 @@
                 border: none;
                 cursor: pointer;
             }
-            .contact{
-                display:flex;
-                justify-content:center;
-                align-items:center;
+            .search-container input::placeholder, 
+            .search-container button:focus{
+                color: white;
             }
-            .contact-form{
-                width:40%;
-                background:transparent;
-                padding:30px;
-                
+            .search-container input:focus{
+                color: white;
+                outline: none;
             }
-            .contact-form h2{
-                display:flex;
-                justify-content:center;
-                margin-bottom: 50px;
-                color:white;
-                font-weight:normal;
+            .europe h2{
+                text-align:center;
                 font-size:50px;
-                letter-spacing: 10px;
-            }
-            .contact-form form{
-                text-align: center;
-            }
-            .contact-form input, .contact-form textarea{
-                width:100%;
-                padding:15px;
-                margin-bottom:20px;
-                border-radius:12px;
-                background-color:rgb(59, 22, 70, 0.1);
-                border: 1px solid #ffffff;
-                font-size:15px;
+                margin-top: 20px;
+                margin-bottom:30px;
                 color: white;
-                outline:none;
+                font-weight: normal;
+                letter-spacing: 17px;
             }
-            .contact-form textarea{
-                height:200px;
-                resize:none;
-                color: white;
-            }
-            .contact-form button{
-                background:transparent;
-                border:none;
-                padding:10px 20px;
-                border-radius:15px;
-                cursor:pointer;
-                color: #F1F0E8;
-                border: 1px solid #ffffff;
-                font-size:15px;
-            }
-            input::placeholder, input:focus, textarea::placeholder, 
-            button:focus, textarea:focus{
-                color: white;
-            }
+            
             footer {
                 left: 0;
                 bottom: 0;
@@ -157,6 +122,25 @@
                 opacity: 0.7;
                 transition: 0.3s;
             }
+            .scroll-container {
+                background-color: transparent;
+                overflow: auto;
+                white-space: nowrap;
+                padding: 10px;
+            }
+            .scroll-container img {
+                padding: 10px;
+            }
+            .scroll-container::-webkit-scrollbar {
+                height: 12px;
+            }
+            .scroll-container::-webkit-scrollbar-track {
+                background: transparent;
+            }
+            .scroll-container::-webkit-scrollbar-thumb {
+                background-color: rgba(255, 255, 255, 0.5);
+                border-radius: 10px;
+            }
 
         </style>
 
@@ -176,28 +160,30 @@
                 <input type="text" placeholder="search our website" name="search">
             </div>
         </nav>
-        
-        <section id="contact" class="contact">
-            <div class="contact-form">
-                <h2>MESSAGE US!</h2>
 
-                <form method="POST" action="retrieve.php">
-                    <input type="text" name="fullname" placeholder="FULL NAME">
-                    <input type="text" name="email" placeholder="EMAIL">
-                    <textarea name="message" placeholder="YOUR MESSAGE"></textarea>
-                    <button type="submit">SEND MESSAGE</button>
-                </form>
-            </div> 
+        <section id="europe" class="europe">
+            <h2>EUROPE 2025</h2>
+            <div class="scroll-container">
+                <img src="tours/europe 2025/eu.png" width="1000" height="600">
+                <img src="tours/europe 2025/SnapInsta.to_491129596_18500568499009925_1085474669752282421_n.jpg" width="500" height="600">
+                <img src="tours/europe 2025/SnapInsta.to_491439028_18500568520009925_1070630089492782504_n.jpg" width="500" height="600">
+                <img src="tours/europe 2025/SnapInsta.to_491233880_18500568535009925_1336778144436454002_n.jpg" width="500" height="600">
+                <img src="tours/europe 2025/SnapInsta.to_491243211_18500568550009925_5826894915043670187_n.jpg" width="500" height="600">
+                <img src="tours/europe 2025/SnapInsta.to_491432534_18500568553009925_1642188781331941068_n.jpg" width="500" height="600">
+                <img src="tours/europe 2025/SnapInsta.to_491440954_18500568508009925_4850614544199190620_n.jpg" width="500" height="600">
+                <img src="tours/europe 2025/SnapInsta.to_491443820_18500568340009925_7596091262705822077_n.jpg" width="500" height="600">
+            </div>
+            
         </section>
-        <footer>
-            <p>&copy; 2026 Chase Atlantic UK.</p>
+            <footer>
+                <p>&copy; 2026 Chase Atlantic UK.</p>
 
-            <div class="socials">
-                <a href="https://www.instagram.com/chaseatlantic" class="fa fa-instagram" target="_blank"></a>
-                <a href="https://www.facebook.com/ChaseAtlantic/" class="fa fa-facebook-f" target="_blank"></a>
-                <a href="https://www.youtube.com/@chaseatlantic" class="fa fa-youtube-play" target="_blank"></a>
-                <a href="https://x.com/chaseatlantic?lang=en" class="fa fa-twitter" target="_blank"></a>
-            </div>        
-        </footer>
+                <div class="socials">
+                    <a href="https://www.instagram.com/chaseatlantic" class="fa fa-instagram" target="_blank"></a>
+                    <a href="https://www.facebook.com/ChaseAtlantic/" class="fa fa-facebook-f" target="_blank"></a>
+                    <a href="https://www.youtube.com/@chaseatlantic" class="fa fa-youtube-play" target="_blank"></a>
+                    <a href="https://x.com/chaseatlantic?lang=en" class="fa fa-twitter" target="_blank"></a>
+                </div>
+            </footer>
     </body>
 </html>
